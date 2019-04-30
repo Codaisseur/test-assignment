@@ -1,0 +1,29 @@
+{
+  "title": "Structure Content with HTML",
+  "description": "In this assignment we'll check the page you built today, to see whether you mastered all learning goals!",
+  "passCriteria": 80,
+  "learningGoals": [
+   { 
+      "goal": "You are familiar and can implement semantic HTML",
+      "passCriteria": 60,
+      "successCriteria": [
+        { 
+          "description": "Anchor tag is used with the correct attributes",
+          "command": "node -e 'require(`./tests`).htmlChecker([`<a href=`])'"
+        },
+        { 
+          "description": "HTML includes headings",
+          "command": "node -e 'require(`./tests`).htmlChecker([`<h`])'"
+        },
+        { 
+          "description": "HTML includes main tag",
+          "command": "node -e 'require(`./tests`).htmlChecker([`<main`, `</main>])'"
+        },
+        { 
+          "description": "html includes a doctype, html, head and body tags",
+          "command": "node -e 'require(`./tests`).htmlChecker([`DOCTYPE`, `<html>`, `</html>`, `<head>, `</head>`, `<body>`, `</body>`)'"
+        }
+      ]
+    }
+  ]
+}
